@@ -429,16 +429,70 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <b>Subscribe</b>
+          <div class="subscribe">
+            <form>
+              <label>
+                <input type="email" placeholder="E-mail">
+              </label>
+            </form>
+            <button type="submit">
+              Subscribe
+              <span>
+              <svg class="send-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </span>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close>
+        <button data-modal-close class="close-modal">
           <svg class="modal-close-button">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
+
+        <b>Leave your contacts and we will call you back</b>
+
+        <form class="registration-form">
+          <label for="" class="input-label">
+            Name
+            <input type="text" required>
+          </label>
+
+          <label for="" class="input-label" required>
+            Phone
+            <input type="tel">
+          </label>
+
+          <label for="" class="input-label">
+            Email
+            <input type="email">
+          </label>
+
+          <label for="" class="input-label">
+            Comment
+            <textarea name="comment" rows="10" placeholder="Text input"></textarea>
+          </label>
+        </form>
+
+        <div class="conditions">
+          <form class="terms-form">
+            <label>
+              <input type="checkbox" name="terms-conditions" value="terms" required>
+            </label>
+          </form>
+          <p>I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a></p>
+        </div>
+        <div class="button-send">
+          <button type="submit" class="button-submit">Send</button>
+        </div>
       </div>
     </div>
 
