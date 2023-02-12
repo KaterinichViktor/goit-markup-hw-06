@@ -533,11 +533,14 @@ address{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+
+  color: var(--white);
 }
 
 .subscribe button{
   display: flex;
   align-items: center;
+  cursor: pointer;
   height: 40PX;
   margin: 16px 0 0 24px;
   padding: 8px 24px;
@@ -552,7 +555,14 @@ address{
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe button:hover,
+.subscribe button:focus{
+  background-color: var(--pressed-state);
+}
+
 .send-icon{
   width: 24px;
   height: 24px;
@@ -733,14 +743,16 @@ address{
   height: 24px;
   border-radius: 50%;
   background-color: var(--light);
-  /* background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal:hover,
+.close-modal:focus{
+  background-color: rgb(250, 100, 100);
 }
 
 .modal-info-header{
@@ -837,9 +849,6 @@ textarea::placeholder{
   height: 8px;
 }
 
-.close-modal:hover{
-  background-color: rgb(250, 100, 100);
-}
 
 
 .input-label{
@@ -876,6 +885,12 @@ textarea::placeholder{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-submit:hover,
+.button-submit:focus{
+  background-color: var(--pressed-state);
 }
 
 
