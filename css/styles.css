@@ -68,8 +68,8 @@ ul{
 .header {
   background-color: var(--white);
   border-bottom: 1px solid var(--light);
-  padding: 24px 0;
-  max-height: 76px;
+
+  /* padding: 24px 0; */
   /* position: fixed;
   width: 100%;
   max-width: 1440px;
@@ -90,6 +90,7 @@ ul{
 .header .container,
 .header-navigation{
   display: flex;
+  align-items: center;
 }
 
 .header-address {
@@ -128,9 +129,13 @@ address{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding-bottom: 27px ;
+  padding: 20px 0 28px 0;
+  display: block;
 }
 
+.header-list-item.current{
+  color: var(--primary-brand);
+}
 .header-list-item.current::after{
   content: "";
   position: absolute;
@@ -566,6 +571,8 @@ address{
 .send-icon{
   width: 24px;
   height: 24px;
+  align-self: center;
+  fill: var(--white);
 
 }
 
@@ -779,6 +786,11 @@ address{
   padding-left: 38px;
   margin: 0;
 }
+
+.form-field .input:focus{
+  border-color: var(--primary-brand);
+}
+
 /* .input-label:focus-within{
   border-color: var(--primary-brand);
 } */
@@ -915,5 +927,4 @@ textarea::placeholder{
 .input-icon{
   width: 18px;
   height: 18px;
-
 }
