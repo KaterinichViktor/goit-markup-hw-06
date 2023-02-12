@@ -458,28 +458,51 @@
           </svg>
         </button>
 
+        <div class="modal-info-header">
         <b>Leave your contacts and we will call you back</b>
+        </div>
 
         <form class="registration-form">
-          <label for="" class="input-label">
+          <label for="name" class="input-label">
             Name
-            <input type="text" required>
           </label>
+          <div class="form-field">
+          <input type="text" name="name" id="name" required>
+          <label for="name" class="form-icon">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </label>
+        </div>
 
-          <label for="" class="input-label" required>
-            Phone
-            <input type="tel">
+        <label for="tel" class="input-label">
+          Phone
+        </label>
+        <div class="form-field">
+          <input type="tel" name="tel" id="tel" required>
+          <label for="tel" class="form-icon">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
           </label>
+        </div>
 
-          <label for="" class="input-label">
-            Email
-            <input type="email">
+        <label for="email" class="input-label">
+          Email
+        </label>
+        <div class="form-field">
+          <input type="email" name="email" id="email" required>
+          <label for="email" class="form-icon">
+            <svg class="input-icon">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
           </label>
+        </div>
 
-          <label for="" class="input-label">
-            Comment
-            <textarea name="comment" rows="10" placeholder="Text input"></textarea>
-          </label>
+        <label for="" class="input-label">
+          Comment
+          <textarea name="comment" placeholder="Text input"></textarea>
+        </label>
         </form>
 
         <div class="conditions">

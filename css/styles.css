@@ -712,7 +712,7 @@ address{
 
   padding: 72px 24px 24px 24px;
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: var(--modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -743,13 +743,20 @@ address{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-info-header{
+  display: grid;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 .modal b{
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
+  justify-self: center;
 }
 
 .registration-form input{
@@ -757,8 +764,8 @@ address{
   border-radius: 4px;
   width: 360px;
   height: 40px; 
-  margin-top: 4px;
-  padding-left: 16px;
+  padding-left: 38px;
+  margin: 0;
 }
 /* .input-label:focus-within{
   border-color: var(--primary-brand);
@@ -772,7 +779,7 @@ address{
   border-radius: 4px;
   margin-top: 4px;
   resize: none;
-  padding: 8px 0 0 16px;
+  padding: 8px 16px;
 }
 /* .registration-form textarea:focus-within{
   border-color: var(--primary-brand);
@@ -869,4 +876,29 @@ textarea::placeholder{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+
+.form-field{
+  position: relative;
+  margin-top: 4px;
+}
+
+.form-icon{
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  background-color: #31D0AA;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+}
+
+.input-icon{
+  width: 18px;
+  height: 18px;
+
 }
