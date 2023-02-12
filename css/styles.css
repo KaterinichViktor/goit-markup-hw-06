@@ -573,9 +573,11 @@ address{
   height: 24px;
   align-self: center;
   fill: var(--white);
-
 }
 
+/* .subscribe input:focus{
+  color: red;
+} */
 
 
 /* Page 2 Portfolio */
