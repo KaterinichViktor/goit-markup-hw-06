@@ -790,14 +790,14 @@ address{
   margin: 0;
 }
 
-.form-field .input:focus{
-  border-color: var(--primary-brand);
+.form-field:focus-within .input-icon{
+  fill: var(--primary-brand);
 }
 
-/* .input-label:focus-within{
+.form-field:focus-within input{
+  outline: none;
   border-color: var(--primary-brand);
-} */
-
+}
 
 .registration-form textarea{
   width: 360px;
@@ -808,9 +808,6 @@ address{
   resize: none;
   padding: 8px 16px;
 }
-/* .registration-form textarea:focus-within{
-  border-color: var(--primary-brand);
-} */
 
 textarea::placeholder{
   font-size: 12px;
@@ -887,7 +884,8 @@ textarea::placeholder{
 
 
 
-.input-label{
+.input-label,
+.comment-label{
   display: flex;
   flex-direction: column;
   margin-top: 8px;
@@ -897,6 +895,10 @@ textarea::placeholder{
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--subbtle-text);
+}
+.comment-label:focus-within .textarea{
+  outline: none;
+  border-color: var(--primary-brand);
 }
 
 .button-send{
@@ -940,7 +942,8 @@ textarea::placeholder{
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  background-color: #31D0AA;
+  /* background-color: #31D0AA; */
+  fill: inherit;
 
   display: block;
   width: 18px;
