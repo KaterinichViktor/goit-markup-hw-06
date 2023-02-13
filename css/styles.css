@@ -572,7 +572,8 @@ address{
   width: 24px;
   height: 24px;
   align-self: center;
-  fill: var(--white);
+  background: var(--white);
+  /* fill: var(--white); */
 }
 
 /* .subscribe input:focus{
@@ -761,7 +762,7 @@ address{
 
 .close-modal:hover,
 .close-modal:focus{
-  background-color: rgb(250, 100, 100);
+  background-color: var(--pressed-state);
 }
 
 .modal-info-header{
@@ -820,6 +821,7 @@ textarea::placeholder{
 
 .conditions{
   margin-top: 16px;
+  position: relative;
 
   display: flex;
   align-items: center;
@@ -833,22 +835,50 @@ textarea::placeholder{
   color: var(--terms);
 }
 
+.checkbox{
+  position: absolute;
+  right: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path:inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox:checked ~ .custom-checkbox{
+  background-image: url(../images/Property\ 1=click.svg);
+  background-position: center;
+  border-color: var(--pressed-state);
+}
+
+.custom-checkbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2E2F42;
+  border-radius: 2px;
+}
+
 .terms-form label{
   display: block;
   padding: 0;
   margin: 0;
   width: 16px;
   height: 16px;
-
 }
-.terms-form input{
+/* .terms-form input{
   padding: 0;
   margin: 0;
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--dark);
   border-radius: 2px;
-} 
+}  */
 
 .policy-link{
   font-size: 12px;
@@ -858,7 +888,7 @@ textarea::placeholder{
   color: var(--primary-brand);
 }
 
-.modal-close-button{
+.modal-close-icon{
   width: 8px;
   height: 8px;
 }
