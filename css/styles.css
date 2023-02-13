@@ -575,6 +575,10 @@ address{
   fill: var(--white);
 }
 
+.input-footer-label:focus-within .input-footer{
+  outline: none;
+  border-color: var(--white);
+}
 /* .subscribe input:focus{
   color: red;
 } */
